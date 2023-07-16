@@ -1,0 +1,27 @@
+public class Kata {
+  public static String createPhoneNumber(int[] numbers) {
+    // Your code here!
+    
+    String s="";
+    
+    s=s+'(';
+    
+    for(int i=0;i<3;i++){
+      s=s+numbers[i];
+    }
+    s=s+')';
+    s=s+' ';
+    
+    for(int i=3;i<6;i++){
+      s=s+numbers[i];
+    }
+    s=s+'-';
+    
+    for(int i=6;i<10;i++){
+      s=s+numbers[i];
+    }
+    
+    
+    return s;
+  }
+}
