@@ -1,0 +1,22 @@
+public class Kata {
+  public static int[] sortArray(int[] array) {
+    
+//this loop not needed     for(int i=0;i<array.length;i++){
+     for(int j=0;j<array.length;j++){
+       if(array[j]%2!=0){
+         for(int k=j+1;k<array.length;k++){
+           if(array[k]%2!=0&&array[k]<array[j]){
+             int temp=array[k];
+             array[k]=array[j];
+             array[j]=temp;
+           }
+         }
+       }
+     }
+//this loop not needed       }
+    
+    
+    
+    return array;
+  }
+}
