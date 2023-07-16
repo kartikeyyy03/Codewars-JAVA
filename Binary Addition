@@ -1,0 +1,20 @@
+public class Kata{
+  
+  public static String binaryAddition(int a, int b){
+   int[] binary=new int[40];
+String str="";
+        int c=a+b;
+int index=0;
+        while(c>0){
+            binary[index++]=c%2;
+            c=c/2;
+        }
+
+        for(int i=index-1;i>=0;i--){
+            str=str+binary[i];
+        }
+        return str;
+  }
+}
+    
+    
